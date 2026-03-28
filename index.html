@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>🌾 Digital Farm Assistant</title>
+  <!-- Bootstrap CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"/>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Lato:wght@300;400;700&display=swap" rel="stylesheet"/>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="#home">🌾 Farm Assistant</a>
+      <button class="navbar-toggler" type="button"
+        data-bs-toggle="collapse" data-bs-target="#navMenu"
+        aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="toggler-icon">&#9776;</span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#crops">Crops</a></li>
+          <li class="nav-item"><a class="nav-link" href="#weather">Weather</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section id="home" class="hero-section d-flex align-items-center">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content text-center">
+      <p class="hero-badge">🌱 Smart Agriculture Platform</p>
+      <h1 class="hero-title">Welcome to<br/>Digital Farm Assistant</h1>
+      <p class="hero-desc">
+        Empowering farmers with modern tools — track your crops, check the weather,
+        and grow smarter with technology rooted in the soil.
+      </p>
+      <a href="#crops" class="btn btn-hero me-2">Explore Crops</a>
+      <a href="#contact" class="btn btn-hero-outline">Get in Touch</a>
+    </div>
+    <div class="hero-scroll-indicator">
+      <span>↓</span>
+    </div>
+  </section>
+
+  <!-- ===== CROPS SECTION ===== -->
+  <section id="crops" class="section-pad">
+    <div class="container">
+      <div class="section-header text-center mb-5">
+        <span class="section-tag">Our Fields</span>
+        <h2 class="section-title">Crop Guide</h2>
+        <p class="section-sub">Discover growing tips, ideal conditions, and key facts for major crops.</p>
+      </div>
+
+      <div class="row g-4 justify-content-center">
+
+        <!-- Wheat Card -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="crop-card">
+            <div class="crop-img-wrap">
+              <img src="https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=600&q=80"
+                   alt="Wheat field" class="crop-img"/>
+              <span class="crop-season">🌤 Rabi Season</span>
+            </div>
+            <div class="crop-body">
+              <h3 class="crop-name">🌾 Wheat</h3>
+              <p class="crop-desc">
+                A staple cereal crop grown in cool, dry climates. Requires well-drained loamy soil
+                and moderate rainfall. Sown in winter, harvested in spring.
+              </p>
+              <div class="crop-meta">
+                <span class="meta-pill">💧 Low–Medium Water</span>
+                <span class="meta-pill">🌡 Cool Climate</span>
+                <span class="meta-pill">📅 Oct – Mar</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Rice Card -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="crop-card">
+            <div class="crop-img-wrap">
+              <img src="https://images.unsplash.com/photo-1536304993881-ff6e9eefa2a6?w=600&q=80"
+                   alt="Rice paddy" class="crop-img"/>
+              <span class="crop-season">🌧 Kharif Season</span>
+            </div>
+            <div class="crop-body">
+              <h3 class="crop-name">🌿 Rice</h3>
+              <p class="crop-desc">
+                The world's most consumed crop. Thrives in waterlogged, clayey soil with high humidity.
+                Requires heavy rainfall and warm temperatures throughout its growth.
+              </p>
+              <div class="crop-meta">
+                <span class="meta-pill">💧 High Water</span>
+                <span class="meta-pill">🌡 Tropical</span>
+                <span class="meta-pill">📅 Jun – Nov</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Maize Card -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="crop-card">
+            <div class="crop-img-wrap">
+              <img src="https://images.unsplash.com/photo-1551754655-cd27e38d2076?w=600&q=80"
+                   alt="Maize field" class="crop-img"/>
+              <span class="crop-season">☀️ Kharif Season</span>
+            </div>
+            <div class="crop-body">
+              <h3 class="crop-name">🌽 Maize</h3>
+              <p class="crop-desc">
+                A versatile crop used for food, feed, and fuel. Grows best in well-drained fertile soil
+                with full sunlight. Fast-growing with moderate water requirements.
+              </p>
+              <div class="crop-meta">
+                <span class="meta-pill">💧 Medium Water</span>
+                <span class="meta-pill">🌡 Warm Climate</span>
+                <span class="meta-pill">📅 Jun – Sep</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WEATHER SECTION ===== -->
+  <section id="weather" class="section-pad weather-section">
+    <div class="container">
+      <div class="section-header text-center mb-5">
+        <span class="section-tag">Field Forecast</span>
+        <h2 class="section-title">Weather Check</h2>
+        <p class="section-sub">Get simulated weather conditions to plan your farming activities wisely.</p>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-8 col-lg-6 text-center">
+          <button class="btn btn-weather" id="weatherBtn" onclick="checkWeather()">
+            ☁️ Check Weather
+          </button>
+
+          <div id="weatherResult" class="weather-card mt-4" style="display:none;">
+            <div class="weather-header">
+              <span id="weatherIcon" class="weather-big-icon"></span>
+              <div>
+                <h3 id="weatherCondition" class="weather-condition"></h3>
+                <p id="weatherLocation" class="weather-location"></p>
+              </div>
+            </div>
+            <div class="weather-grid">
+              <div class="weather-stat">
+                <span class="stat-label">🌡 Temperature</span>
+                <span class="stat-value" id="weatherTemp"></span>
+              </div>
+              <div class="weather-stat">
+                <span class="stat-label">💧 Humidity</span>
+                <span class="stat-value" id="weatherHumidity"></span>
+              </div>
+              <div class="weather-stat">
+                <span class="stat-label">💨 Wind Speed</span>
+                <span class="stat-value" id="weatherWind"></span>
+              </div>
+              <div class="weather-stat">
+                <span class="stat-label">🌧 Rainfall</span>
+                <span class="stat-value" id="weatherRain"></span>
+              </div>
+            </div>
+            <p id="weatherAdvice" class="weather-advice"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section id="contact" class="section-pad">
+    <div class="container">
+      <div class="row align-items-center g-5">
+
+        <div class="col-12 col-lg-5">
+          <span class="section-tag">Reach Out</span>
+          <h2 class="section-title mt-2">Contact Us</h2>
+          <p class="section-sub" style="text-align:left;">
+            Have questions about crops, farming techniques, or our platform?
+            Fill in the form and our agricultural experts will get back to you shortly.
+          </p>
+          <div class="contact-info mt-4">
+            <p>📍 Farm Block, Agriculture University, India</p>
+            <p>📞 +91 98765 43210</p>
+            <p>📧 help@digitalfarm.in</p>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-7">
+          <div class="contact-form-wrap">
+            <div id="formAlert" class="form-alert" style="display:none;"></div>
+            <div class="mb-4">
+              <label for="contactName" class="form-label">Your Name</label>
+              <input type="text" id="contactName" class="form-ctrl" placeholder="e.g. Ramesh Kumar"/>
+            </div>
+            <div class="mb-4">
+              <label for="contactEmail" class="form-label">Email Address</label>
+              <input type="email" id="contactEmail" class="form-ctrl" placeholder="you@example.com"/>
+            </div>
+            <div class="mb-4">
+              <label for="contactMessage" class="form-label">Your Message</label>
+              <textarea id="contactMessage" class="form-ctrl" rows="5"
+                placeholder="Ask us anything about farming..."></textarea>
+            </div>
+            <button class="btn btn-submit w-100" onclick="submitForm()">Send Message ✉️</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container text-center">
+      <p class="footer-logo">🌾 Farm Assistant</p>
+      <p class="footer-links">
+        <a href="#home">Home</a> &bull;
+        <a href="#crops">Crops</a> &bull;
+        <a href="#weather">Weather</a> &bull;
+        <a href="#contact">Contact</a>
+      </p>
+      <p class="footer-copy">&copy; 2025 Digital Farm Assistant. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="script.js"></script>
+</body>
+</html>
